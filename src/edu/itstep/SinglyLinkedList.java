@@ -1,5 +1,14 @@
 package edu.itstep;
 
+class Node<T> {
+    public Node next;
+    public T data;
+
+    public void displayNodeData() {
+        System.out.print("\t" + data + "\t");
+    }
+}
+
 public class SinglyLinkedList<T> implements IMyList<T> {
     private Node head;
 
